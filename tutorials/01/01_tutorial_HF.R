@@ -115,3 +115,6 @@ legend(1000, 8, # x and y position of legend
        col=c("black","red"),
        pch=1) # Marker type (1 is default)
 dev.off()
+
+
+?boxplot
