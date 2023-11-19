@@ -1,5 +1,5 @@
 ######    Applied Statistical Analysis I    ######     
-######    Problem Set 2                     ######
+######    Problem Set 3                     ######
 ######    Shekhar Kedia - 23351315          ######
 
 ## Preparing the environment ##
