@@ -105,6 +105,7 @@ help(Prestige)
 \noindent\textbf{\texttt{R} code to create the new variable:}
 \lstinputlisting[language=R, firstline=42, lastline=45]{PS4_Shekhar Kedia.R}
 	
+	\vspace*{0.5cm}
 	
 	\item [(b)]
 	Run a linear model with \texttt{prestige} as an outcome and \texttt{income}, \texttt{professional}, and the interaction of the two as predictors (Note: this is a continuous $\times$ dummy interaction.)
@@ -146,13 +147,16 @@ help(Prestige)
 	\end{tabular} 
 \end{table} 
 
+\newpage
 
 	\item [(c)]
 	Write the prediction equation based on the result.
 	
-	\textit{$\texttt{prestige} = 21.142 + 0.003*\texttt{income} + 37.781*\texttt{professional} - 0.002*\texttt{income}*\texttt{professional}$}
+	\textit{$\texttt{prestige} = 21.142 + 0.003*\texttt{income} + 37.781*\texttt{professional} - 0.002*\texttt{income}*\texttt{professional}$}\\
+	or, \textit{$\texttt{prestige} = 21.142 + 37.781*\texttt{professional} + (0.003 - 0.002*\texttt{professional})*\texttt{income}$}
+	
+	\vspace*{0.5cm}
 
-\newpage
 	\item [(d)]
 	Interpret the coefficient for \texttt{income}.
 	
@@ -164,14 +168,14 @@ help(Prestige)
 	\\\\
 	There is a positive and statistically reliable relationship between income and prestige score, such that a one dollar increase in income is associated with an average increase of 0.003 units in prestige score for non-professionals and an average increase of 0.001 units in prestige score for professionals. 
 	
-	\vspace*{1cm}
+	\vspace*{0.5cm}
 	
 	\item [(e)]
 	Interpret the coefficient for \texttt{professional}.
 	
 	For professionals with no income the prestige score is on average 37.781 units higher in comparison to non-professionals with no income.
 	
-	\vspace*{1cm}
+	\vspace*{0.5cm}
 	
 	\item [(f)]
 	What is the effect of a \$1,000 increase in income on prestige score for professional occupations? In other words, we are interested in the marginal effect of income when the variable \texttt{professional} takes the value of $1$. Calculate the change in $\hat{y}$ associated with a \$1,000 increase in income based on your answer for (c).
